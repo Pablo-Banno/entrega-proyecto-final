@@ -1,0 +1,24 @@
+nav {
+    font-size: 1.2rem;
+    background-color: $color-nav-footer;
+
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+
+    a:hover {
+        transition: 0ms;
+        font-weight: bold;
+        }
+}
+
+@media (min-width: 992px) {
+    .home-button {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .li-home {
+        display: none;
+    }
+}

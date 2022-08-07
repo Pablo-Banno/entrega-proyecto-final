@@ -1,0 +1,114 @@
+// ----- Contactate -----
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 7vh;
+
+    color: $fuente-negro;
+    background-color: $color-fondo;
+    font-family: 'Raleway', sans-serif;
+
+    h2 {
+        padding-bottom: 2vh;
+        font-weight: bold;
+    }
+
+    &-horarios {
+        width: 50%;
+        font-size: 1.1rem;
+    }
+
+    &-contactate {
+        width: 50%;
+
+        &_nombre {
+            padding-bottom: 5px;
+            input {
+                width: 40%;
+                background-color: whitesmoke;
+                border-radius: 5px;
+            }
+        }
+        &_apellido {
+            padding-bottom: 5px;
+            input {
+                width: 40%;
+                background-color: whitesmoke;
+                border-radius: 5px;
+            }
+        }
+        &_email {
+            padding-bottom: 5px;
+            input {
+                width: 40%;
+                background-color: whitesmoke;
+                border-radius: 5px;
+            }
+        }
+        &_noticias {
+            padding-bottom: 5px;
+            font-style: italic;
+            input {
+                align-items: center;
+            }
+        }
+        &_comentarios {
+            padding-bottom: 5px;
+            textarea {
+                width: 40%;
+                background-color: whitesmoke;
+                border-radius: 5px;
+            }
+        }
+        &_submit-reset {
+            input {
+                width: 20%;
+                background-color: whitesmoke;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contacto {
+        flex-direction: column;
+
+        &-horarios {
+            padding-bottom: 2.4vh;
+        }
+        &-contactate {
+            &_nombre {
+                input {
+                    width: 90%;
+                }
+            }
+            &_apellido {
+                input {
+                    width: 90%;
+                }
+            }
+            &_email {
+                input {
+                    width: 90%;
+                }
+            }
+            &_comentarios {
+                textarea {
+                    width: 90%;
+                }
+            }
+            &_submit-reset {
+                input {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

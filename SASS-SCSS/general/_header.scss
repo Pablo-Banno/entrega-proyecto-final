@@ -1,0 +1,42 @@
+.header-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    color: $fuente-blanco;
+
+    padding: 20px;
+    height: 45vh;
+
+    background-image: url("../images/milano-afuera-larga_auto_x2.jpg");
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-size: 4rem;
+
+        font-family: 'Bebas Neue', cursive;
+    }
+    h2 {
+        font-size: 1rem;
+        font-style: oblique;
+
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-titles {
+        background-image: url("../images/milano-afuera-larga_auto_x2.jpg");
+        background-size: contain;
+
+        height: 30vh;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}

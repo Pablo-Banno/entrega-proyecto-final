@@ -1,0 +1,38 @@
+/* ============ Basics ============ */
+
+@import "basics/font-family";
+@import "basics/reset";
+
+/* =========== Utilities =========== */
+
+@import "utilities/variables";
+
+/* ========== index.html ========== */
+
+/* ------- Header ------- */
+@import "general/header";
+
+/* --------- NAV -------- */ 
+@import "general/nav";
+
+/* ------- Footer ------- */ 
+@import "general/footer";
+
+/* ============ Pages ============= */
+
+/* -------- Home -------- */
+@import "pages/home";
+
+/* -- Nuestra Historia -- */
+@import "pages/nuestrahistoria";
+
+/* --- Nuestros Cafés --- */
+@import "pages/nuestroscafes";
+
+/* - Nuestros Productos - */
+@import "pages/nuestrosproductos";
+
+/* ------ Contacto ------ */
+@import "pages/contacto";
+
+

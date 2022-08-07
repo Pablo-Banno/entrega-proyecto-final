@@ -1,0 +1,480 @@
+@charset "UTF-8";
+/* ============ Basics ============ */
+/* ----- Font Family ----- */
+/* Set custom */
+/* ----- Reset CSS ----- */
+/* Made by bootstrap */
+/* =========== Utilities =========== */
+/* ----- Backgrounds ----- */
+/* ----- Font-colors ----- */
+/* ========== index.html ========== */
+/* ------- Header ------- */
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  height: 45vh;
+  background-image: url("../images/milano-afuera-larga_auto_x2.jpg");
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header-titles h1 {
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
+}
+.header-titles h2 {
+  font-size: 1rem;
+  font-style: oblique;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .header-titles {
+    background-image: url("../images/milano-afuera-larga_auto_x2.jpg");
+    background-size: contain;
+    height: 30vh;
+  }
+  .header-titles h1 {
+    font-size: 2.5rem;
+  }
+}
+/* --------- NAV -------- */
+nav {
+  font-size: 1.2rem;
+  background-color: rgba(46, 26, 6, 0.8235294118);
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+nav a:hover {
+  transition: 0ms;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .home-button {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .li-home {
+    display: none;
+  }
+}
+/* ------- Footer ------- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1vh;
+  background-color: rgba(46, 26, 6, 0.8235294118);
+  font-family: "Raleway", sans-serif;
+}
+.footer_media {
+  font-weight: 500;
+}
+.footer_media p {
+  font-size: 1.3rem;
+  color: white;
+}
+.footer_media i {
+  font-size: 3rem;
+  color: white;
+}
+
+/* ============ Pages ============= */
+/* -------- Home -------- */
+.quienes-somos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 7vh;
+  color: black;
+  background-color: antiquewhite;
+  font-family: "Raleway", sans-serif;
+}
+.quienes-somos_texto {
+  padding: 5vh 20vh 5vh 0vh;
+  width: 50%;
+  height: fit-content;
+}
+.quienes-somos_texto h2 {
+  padding-bottom: 1.5vh;
+  font-weight: bold;
+}
+.quienes-somos_img {
+  padding: 5vh;
+  position: relative;
+  width: 50%;
+}
+.quienes-somos_img img {
+  width: auto;
+  height: auto;
+  max-height: 60vh;
+  max-width: 100%;
+  border: rgba(46, 26, 6, 0.8235294118) 15px solid;
+  border-top-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+}
+
+@media (max-width: 992px) {
+  .quienes-somos {
+    flex-direction: column;
+  }
+  .quienes-somos_texto {
+    padding: 3vh 3vh 0vh 0vh;
+    width: 100%;
+  }
+  .quienes-somos_texto h2 {
+    padding-bottom: 1.5vh;
+    font-weight: bold;
+  }
+  .quienes-somos_img {
+    padding: 3vh;
+    position: relative;
+    width: 100%;
+  }
+}
+.gallery {
+  display: grid;
+  gap: 4px;
+  padding: 0vh 15vh 10vh 15vh;
+  background-color: antiquewhite;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img1 img1 img2" "img3 img4 img4";
+}
+.gallery_img1 {
+  grid-area: img1;
+}
+.gallery_img2 {
+  grid-area: img2;
+}
+.gallery_img3 {
+  grid-area: img3;
+}
+.gallery_img4 {
+  grid-area: img4;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 9px 28px 3px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    padding: 0vh 10vh 7vh 10vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img1 img2" "img3 img4";
+  }
+}
+.donde-estamos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0vh 5vh 10vh 5vh;
+  color: black;
+  background-color: antiquewhite;
+  font-family: "Raleway", sans-serif;
+}
+.donde-estamos h2 {
+  padding-bottom: 3vh;
+  font-weight: bold;
+}
+.donde-estamos p {
+  padding-bottom: 2vh;
+  font-style: italic;
+  font-weight: 400;
+}
+.donde-estamos img {
+  width: 25%;
+}
+
+@media (max-width: 992px) {
+  .donde-estamos img {
+    width: 50%;
+  }
+}
+/* -- Nuestra Historia -- */
+.nuestra-historia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 7vh;
+  color: black;
+  background-color: antiquewhite;
+  font-family: "Raleway", sans-serif;
+}
+.nuestra-historia_texto {
+  padding: 5vh 16vh 5vh 0vh;
+  width: 50%;
+  height: fit-content;
+}
+.nuestra-historia_texto h2 {
+  padding-bottom: 1.5vh;
+  font-weight: bold;
+}
+.nuestra-historia_img {
+  padding: 5vh;
+  position: relative;
+  width: 50%;
+}
+.nuestra-historia_img img {
+  width: auto;
+  height: auto;
+  max-height: 60vh;
+  max-width: 100%;
+  border: rgba(46, 26, 6, 0.8235294118) 15px solid;
+  border-top-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+}
+
+@media (max-width: 992px) {
+  .nuestra-historia {
+    flex-direction: column;
+  }
+  .nuestra-historia_texto {
+    padding: 3vh 3vh 0vh 0vh;
+    width: 100%;
+  }
+  .nuestra-historia_texto h2 {
+    padding-bottom: 1.5vh;
+    font-weight: bold;
+  }
+  .nuestra-historia_img {
+    padding: 3vh;
+    position: relative;
+    width: 100%;
+  }
+}
+/* --- Nuestros Cafés --- */
+.nuestros-cafes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7vh 15vh 7vh 7vh;
+  color: black;
+  background-color: antiquewhite;
+  font-family: "Raleway", sans-serif;
+}
+.nuestros-cafes_tabla {
+  position: relative;
+  padding: 5vh;
+  width: 50%;
+  height: fit-content;
+}
+.nuestros-cafes_tabla h2 {
+  padding-bottom: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+.nuestros-cafes_tabla table {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.nuestros-cafes_img {
+  padding: 5vh;
+  position: relative;
+  width: 50%;
+}
+.nuestros-cafes_img img {
+  width: auto;
+  height: auto;
+  max-height: 60vh;
+  max-width: 100%;
+  border: rgba(46, 26, 6, 0.8235294118) 15px solid;
+  border-top-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+}
+
+@media (max-width: 992px) {
+  .nuestros-cafes {
+    flex-direction: column;
+  }
+  .nuestros-cafes_tabla {
+    padding: 3vh 3vh 0vh 0vh;
+    width: 100%;
+  }
+  .nuestros-cafes_tabla h2 {
+    padding-bottom: 1.5vh;
+    font-weight: bold;
+  }
+  .nuestros-cafes_img {
+    padding: 3vh;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* - Nuestros Productos - */
+.nuestros-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7vh 15vh 7vh 7vh;
+  color: black;
+  background-color: antiquewhite;
+  font-family: "Raleway", sans-serif;
+}
+.nuestros-productos_tabla {
+  position: relative;
+  padding: 5vh;
+  width: 50%;
+  height: fit-content;
+}
+.nuestros-productos_tabla h2 {
+  padding-bottom: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+.nuestros-productos_tabla table {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.nuestros-productos_img {
+  padding: 5vh;
+  position: relative;
+  width: 50%;
+}
+.nuestros-productos_img img {
+  width: auto;
+  height: auto;
+  max-height: 60vh;
+  max-width: 100%;
+  border: rgba(46, 26, 6, 0.8235294118) 15px solid;
+  border-top-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+}
+
+@media (max-width: 992px) {
+  .nuestros-productos {
+    flex-direction: column;
+  }
+  .nuestros-productos_tabla {
+    padding: 3vh 3vh 0vh 0vh;
+    width: 100%;
+  }
+  .nuestros-productos_tabla h2 {
+    padding-bottom: 1.5vh;
+    font-weight: bold;
+  }
+  .nuestros-productos_img {
+    padding: 3vh;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ------ Contacto ------ */
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 7vh;
+  color: black;
+  background-color: antiquewhite;
+  font-family: "Raleway", sans-serif;
+}
+.contacto h2 {
+  padding-bottom: 2vh;
+  font-weight: bold;
+}
+.contacto-horarios {
+  width: 50%;
+  font-size: 1.1rem;
+}
+.contacto-contactate {
+  width: 50%;
+}
+.contacto-contactate_nombre {
+  padding-bottom: 5px;
+}
+.contacto-contactate_nombre input {
+  width: 40%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.contacto-contactate_apellido {
+  padding-bottom: 5px;
+}
+.contacto-contactate_apellido input {
+  width: 40%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.contacto-contactate_email {
+  padding-bottom: 5px;
+}
+.contacto-contactate_email input {
+  width: 40%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.contacto-contactate_noticias {
+  padding-bottom: 5px;
+  font-style: italic;
+}
+.contacto-contactate_noticias input {
+  align-items: center;
+}
+.contacto-contactate_comentarios {
+  padding-bottom: 5px;
+}
+.contacto-contactate_comentarios textarea {
+  width: 40%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.contacto-contactate_submit-reset input {
+  width: 20%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .contacto {
+    flex-direction: column;
+  }
+  .contacto-horarios {
+    padding-bottom: 2.4vh;
+  }
+  .contacto-contactate_nombre input {
+    width: 90%;
+  }
+  .contacto-contactate_apellido input {
+    width: 90%;
+  }
+  .contacto-contactate_email input {
+    width: 90%;
+  }
+  .contacto-contactate_comentarios textarea {
+    width: 90%;
+  }
+  .contacto-contactate_submit-reset input {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,16 +1,151 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <title>Milano Centrale</title>
 </head>
 
 <body>
+
+    <!-- ===== Header ===== -->
+
+    <header>
+
+        <!-- ----- Titles ----- -->
+
+        <section class="header-titles">
+            <h1>Milano Centrale</h1>
+            <h2>Specialty Coffee</h2>
+        </section>
+
+        <!-- ------- NAV ------ -->
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+
+            <div class="container-fluid">
+
+                <div class="home-button">
+
+                    <a class="navbar-brand" href="">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav me-auto mb-lg-0 col justify-content-around">
+
+                        <div class="li-home">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                            </li>
+                        </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nuestrahistoria.html">Nuestra Historia</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nuestroscafes.html">Nuestros Cafés</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nuestrosproductos.html">Nuestros Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- ===== Main ===== -->
+    
+    <main>
+
+            <!-- -- Quiénes somos -- -->
+            
+            <section>
+                <article class="quienes-somos">
+
+                    <div class="quienes-somos_img">
+                        <img src="./images/milano-cafe-3.jpg" alt="café-3">
+                    </div>
+
+                    <div class="quienes-somos_texto">
+                        <h2>¿Quiénes somos?</h2>
+                        <p>El psicólogo Fernando Colombano inició un novedoso emprendimiento familiar. Alterna sus horas de diván con la atención de "Milano Centrale", la primera cafetería de especialidad de Campana. "Lo que hace al buen café es el sabor, el saber manipularlo", afirma el barista, que viajó hasta Australia para conocer los secretos de lo que para él es arte genuino. Y asegura: "Cumplir los sueños no es imposible, es atreverse, es luchar, es no darse por vencido".</p>
+                        <p>Milano Centrale es una pasión transformada en un negocio prometedor. "Siempre cuento lo mismo: cuando me quedaba a dormir en su casa, mi abuela -en contra de lo que mamá decía- me daba café. Preparaba en una jarra de aluminio con lo que yo llamo la media, ese filtro que te siguen vendiendo en las ferreterías, y me servía café negro, bien dulce, acompañado con las facturas de una panadería que se llama La Ipa, generosas, grandes, sabrosas. Así fue como empecé a tomar café. Después que me recibí de psicólogo, compré una cafetera expreso doméstica y una cosa fue llevando a la otra", relata Fernando.</p>
+                    </div>
+
+                </article>
+            </section>
+
+            <!-- ---- Gallery ---- -->
+
+            <section>
+                <article class="gallery">
+
+                    <img src="./images/milano-cafe-2_auto_x2.jpg" alt="Café Clásico" class="gallery_img1">
+                    <img src="./images/milano-cafe-1_auto_x2.jpg" alt="Tazas Oficiales" class="gallery_img2">
+                    <img src="./images/milano-adentro-1_auto_x2.jpg" alt="Familia Milano" class="gallery_img3">
+                    <img src="./images/milano-adentro-2_auto_x2.jpg" alt="Familia Milano" class="gallery_img4">
+
+                </article>
+            </section>
+
+            <!--- ¿Dónde estamos? --->
+
+            <section>
+                <article class="donde-estamos">
+
+                    <h2>¿Dónde estamos?</h2>
+                    <p>Campana, Buenos Aires, Argentina</p>
+                    <a href="https://www.google.com/maps/place/Milano+Centrale+Specialty+Coffee/@-34.1747232,-58.9501769,17z/data=!4m5!3m4!1s0x95bb733f898711e5:0xee71938875280c50!8m2!3d-34.1747314!4d-58.9478635" target="_blank">
+                        <img src="./images/mapa-3.png" alt="Location">
+                    </a>
+
+                </article>
+            </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+
+    <footer class="footer">
+        <div class="footer_media">
+            <p>Nuestras Redes</p>
+            <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-instagram"></i></a>
+            <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-facebook"></i></a>
+            <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-tiktok"></i></a>
+        </div>
+    </footer>
+
+<script src="./JS/bootstrap.js">
+</script>
     
 </body>
 

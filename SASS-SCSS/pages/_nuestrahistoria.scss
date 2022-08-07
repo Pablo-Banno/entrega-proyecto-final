@@ -1,0 +1,69 @@
+// ----- Nuestra Historia -----
+
+.nuestra-historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+    padding: 7vh;
+
+    color: $fuente-negro;
+    background-color: $color-fondo;
+    font-family: 'Raleway', sans-serif;
+
+    &_texto {
+        padding: 5vh 16vh 5vh 0vh;
+
+        width: 50%;
+        height: fit-content;
+
+        h2 {
+            padding-bottom: 1.5vh;
+            font-weight: bold;
+        }
+    }
+
+    &_img {
+        padding: 5vh;
+        position: relative;
+
+        width: 50%;
+        
+        img {
+            width: auto;
+            height: auto;
+
+            max-height: 60vh;
+            max-width: 100%;
+
+            border: $color-nav-footer 15px solid;
+            border-top-left-radius: 65px;
+            border-bottom-right-radius: 65px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .nuestra-historia {
+        flex-direction: column;
+    
+        &_texto {
+            padding: 3vh 3vh 0vh 0vh;
+    
+            width: 100%;
+    
+            h2 {
+                padding-bottom: 1.5vh;
+                font-weight: bold;
+            }
+        }
+    
+        &_img {
+            padding: 3vh;
+            position: relative;
+    
+            width: 100%;
+        }
+    }
+}
